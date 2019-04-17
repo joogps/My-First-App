@@ -12,8 +12,6 @@
 		27822010226550B9005F262A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2782200E226550B9005F262A /* Main.storyboard */; };
 		27822012226550BA005F262A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27822011226550BA005F262A /* Assets.xcassets */; };
 		27822015226550BA005F262A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27822013226550BA005F262A /* LaunchScreen.storyboard */; };
-		27822020226550BA005F262A /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782201F226550BA005F262A /* MyFirstAppTests.swift */; };
-		2782202B226550BA005F262A /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2782202A226550BA005F262A /* MyFirstAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		27822014226550BA005F262A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27822016226550BA005F262A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2782201B226550BA005F262A /* MyFirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2782201F226550BA005F262A /* MyFirstAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppTests.swift; sourceTree = "<group>"; };
-		27822021226550BA005F262A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27822026226550BA005F262A /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2782202A226550BA005F262A /* MyFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITests.swift; sourceTree = "<group>"; };
-		2782202C226550BA005F262A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				27822009226550B9005F262A /* MyFirstApp */,
-				2782201E226550BA005F262A /* MyFirstAppTests */,
-				27822029226550BA005F262A /* MyFirstAppUITests */,
 				27822008226550B9005F262A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				27822016226550BA005F262A /* Info.plist */,
 			);
 			path = MyFirstApp;
-			sourceTree = "<group>";
-		};
-		2782201E226550BA005F262A /* MyFirstAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				2782201F226550BA005F262A /* MyFirstAppTests.swift */,
-				27822021226550BA005F262A /* Info.plist */,
-			);
-			path = MyFirstAppTests;
-			sourceTree = "<group>";
-		};
-		27822029226550BA005F262A /* MyFirstAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2782202A226550BA005F262A /* MyFirstAppUITests.swift */,
-				2782202C226550BA005F262A /* Info.plist */,
-			);
-			path = MyFirstAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27822020226550BA005F262A /* MyFirstAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2782202B226550BA005F262A /* MyFirstAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = joogps.MyFirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joogps.MyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = joogps.MyFirstApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joogps.MyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
