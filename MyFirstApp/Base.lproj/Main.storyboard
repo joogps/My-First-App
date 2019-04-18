@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina3_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,38 +15,38 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu aplicativo fofo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0l-VV-gs4">
-                                <rect key="frame" x="77.666666666666686" y="144" width="220" height="33"/>
+                                <rect key="frame" x="130" y="96.5" width="220" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obrigado!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86R-eh-ZGE" userLabel="Response">
+                                <rect key="frame" x="201.5" y="149.5" width="77" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1R-4Z-dPn" userLabel="Button">
-                                <rect key="frame" x="93.666666666666686" y="227" width="188" height="34"/>
+                                <rect key="frame" x="146" y="180.5" width="188" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Me aperte, eu sou fofo!"/>
                                 <connections>
                                     <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZNw-Jm-ZqM"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obrigado!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86R-eh-ZGE" userLabel="Response">
-                                <rect key="frame" x="149" y="411" width="77" height="21"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Q1R-4Z-dPn" firstAttribute="top" secondItem="l0l-VV-gs4" secondAttribute="bottom" constant="50" id="55a-IF-yOv"/>
-                            <constraint firstItem="86R-eh-ZGE" firstAttribute="top" secondItem="Q1R-4Z-dPn" secondAttribute="bottom" constant="150" id="Buf-9f-Ode"/>
-                            <constraint firstItem="l0l-VV-gs4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MkS-2k-ABR"/>
-                            <constraint firstItem="l0l-VV-gs4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pv4-sq-nEb"/>
-                            <constraint firstItem="Q1R-4Z-dPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVn-KO-KMR"/>
-                            <constraint firstItem="86R-eh-ZGE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RzE-qT-AZq"/>
+                            <constraint firstItem="l0l-VV-gs4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4GW-YS-i6P"/>
+                            <constraint firstItem="86R-eh-ZGE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6rm-s6-yWi"/>
+                            <constraint firstItem="86R-eh-ZGE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hqd-xR-M29"/>
+                            <constraint firstItem="86R-eh-ZGE" firstAttribute="top" secondItem="l0l-VV-gs4" secondAttribute="bottom" constant="20" id="SiP-3o-9gV"/>
+                            <constraint firstItem="Q1R-4Z-dPn" firstAttribute="top" secondItem="86R-eh-ZGE" secondAttribute="bottom" constant="10" id="heJ-37-yQz"/>
+                            <constraint firstItem="Q1R-4Z-dPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXl-kd-wsc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
